@@ -14,7 +14,7 @@
 <!--make transaction  as tx advice  -->
 <tx:advice id="txAdvice" transaction-manager="dsTxmgt">
 <tx:attributes>
-<tx:method name="transferMoney" propagation="REQUIRED"/>
+<tx:method name="transferMoney" propagation="REQUIRED" timeout="20" rollback-for="java.lang.illegalAccess"/>
 </tx:attributes>
 </tx:advice>
 

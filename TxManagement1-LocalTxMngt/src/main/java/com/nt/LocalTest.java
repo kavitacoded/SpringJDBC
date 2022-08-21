@@ -14,7 +14,7 @@ public class LocalTest
     	IBankService proxy=ctx.getBean("bankService",IBankService.class);
     	//invoke method
     	try {
-			System.out.println(proxy.transferMoney(115, 101,10000.0));
+			System.out.println(proxy.transferMoney(101, 115,10000.0));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
